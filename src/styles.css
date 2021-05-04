@@ -25,10 +25,6 @@ li {
     padding: 0;
 }
 
-img {
-    display: block;
-}
-
 footer {
     text-align: center;
 }
@@ -47,7 +43,7 @@ footer {
     width: 100px;
 }
 
-.weather-temperature units {
+.weather-temperature .units {
     position: relative;
     font-size: 16px;
     top: -34px;
