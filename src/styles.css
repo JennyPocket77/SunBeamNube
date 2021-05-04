@@ -24,3 +24,11 @@ li {
     margin: 0;
     padding: 0;
 }
+
+.weather-app {
+    border: 1px solid #878787;
+    border-radius: 5px;
+    margin: 30px auto;
+    max-width: 600px;
+    padding: 20px;
+}
