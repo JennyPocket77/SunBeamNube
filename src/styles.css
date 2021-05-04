@@ -25,10 +25,31 @@ li {
     padding: 0;
 }
 
-.weather-app {
+img {
+    display: block;
+}
+
+footer {
+    text-align: center;
+}
+
+.container {
     border: 1px solid #878787;
     border-radius: 5px;
     margin: 30px auto;
     max-width: 600px;
     padding: 20px;
 }
+
+.weather-temperature img {
+    margin-right: 5px;
+    height: 100px;
+    width: 100px;
+}
+
+.weather-temperature units {
+    position: relative;
+    font-size: 16px;
+    top: -34px;
+}
+
