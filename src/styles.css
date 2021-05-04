@@ -29,7 +29,7 @@ footer {
     text-align: center;
 }
 
-.container {
+.weather-app-wrapper {
     border: 1px solid #878787;
     border-radius: 5px;
     margin: 30px auto;
@@ -37,10 +37,24 @@ footer {
     padding: 20px;
 }
 
-.weather-icon {
+.weather-app {
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.temperature {
     margin-right: 5px;
     height: 100px;
     width: 100px;
+}
+
+.weather-temperature .active {
+    color: blue;
+    cursor: default;
+}
+
+.weather-temperature .active:hover {
+    text-decoration: none;
 }
 
 .units {
