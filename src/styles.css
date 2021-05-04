@@ -4,7 +4,7 @@ body {
 
 h1 {
     color: #878787;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 100;
     line-height: 28px;
     margin-bottom: 0;
@@ -33,19 +33,23 @@ footer {
     border: 1px solid #878787;
     border-radius: 5px;
     margin: 30px auto;
-    max-width: 600px;
+    max-width: 700px;
     padding: 20px;
 }
 
-.weather-temperature img {
+.weather-icon {
     margin-right: 5px;
     height: 100px;
     width: 100px;
 }
 
-.weather-temperature .units {
+.units {
     position: relative;
     font-size: 16px;
-    top: -34px;
+    top: -22px;
+}
+
+.temperature {
+    font-size: 50px;
 }
 

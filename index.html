@@ -23,14 +23,14 @@
 <div class="container">
   <div class="weather-app">
     <div>
-      <h1>
+      <h1 id="city">
         New York
       </h1>
         <ul>
-          <li>
+          <li id="date">
             Friday 5:00pm 
           </li>
-          <li>
+          <li id="description">
             Clear
           </li>
       </ul>
@@ -38,20 +38,20 @@
   </div>
 
   <div class="row">
-    <div class="col-7 d-flex justify-content-center">
-      <div class="clearfix weather-temperature">
+    <div class="col-6">
+      <div class="clearfix">
         <img 
          src="http://media.merchantcircle.com/32488191/tropical%20fun%20sun%20logo%20no%20name_full.jpeg"
           alt="clear"
           class="weather-icon"
         />
-          <div class="ms-3">
-            <span class="temperature" id="temperature">12</span>
-            <span class="units">°C / °F</span>
+          <div class="col-6">
+            <strong class="temperature" id="temperature">12</strong>
+            <span class="units">°C / <a href="#">°F</a></span>
           </div>
       </div>
     </div>
-      <div class="col-5">
+      <div class="col-6">
         <ul>
           <li>
             Humidity: 73%
