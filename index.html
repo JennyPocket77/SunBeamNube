@@ -13,7 +13,6 @@
     />
     
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     
     <link rel="stylesheet" href="src/styles.css" />
 
@@ -48,48 +47,38 @@
         New York
       </h1>
         <ul>
-          <li id="date">
-            Friday 5:00pm 
+          <li>Last Updated:
+          <Span id="date">Friday 5:00pm</Span>
           </li>
-          <li id="description">
-            Clear
-          </li>
+          <li id="description">Clear</li>
       </ul>
     </div>
-  </div>
 
   <div class="row">
     <div class="col-6">
       <div class="clearfix weather-temperature">
         <img 
-         src="http://openweathermap.org/img/wn/10d@2x.png"
+         src=""
           alt="clear"
-          class="float-left"
           id="icon"
+          class="float-left"
         />
           <div class="float-left">
-            <strong class="temperature" id="temperature">12</strong>
-            <span class="units"><a href="#" id="celsius-link" class="active">°C</a> / 
+            <strong id="temperature">12</strong>
+            <span class="units"><a href="#" id="celsius-link" class="active">°C</a> | 
             <a href="#" id="fahrenheit-link">°F</a></span>
           </div>
       </div>
     </div>
       <div class="col-6">
         <ul>
-          <li>
-            Humidity: <span id="humidity">73</span>%
-          </li>
-          <li>
-            Wind: <span id="wind">2</span> km/h
-          </li>
+          <li>Humidity: <span id="humidity">73</span>%</li>
+          <li>Wind: <span id="wind">2</span> km/h</li>
         </ul>
       </div>
     </div>
   </div>
-  </div>
-  </div>
 
-<footer>
   <small>
     <a>This project was coded by 
       <a href="https://www.linkedin.com/in/jenniferanngonzalez/"
@@ -101,9 +90,8 @@
       target="_blank">Netlify</a>
     </a>
   </small>
-</footer>
-
+  </div>
+</div>
     <script src="src/app.js"></script>
-
 </body>
 </html>

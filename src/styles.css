@@ -25,30 +25,50 @@ li {
     padding: 0;
 }
 
-footer {
+li::first-letter {
+    text-transform: capitalize;
+}
+
+small {
     text-align: center;
 }
 
 .weather-app-wrapper {
-    border: 1px solid #878787;
-    border-radius: 5px;
     margin: 30px auto;
-    max-width: 700px;
-    padding: 20px;
+    max-width: 600px;
 }
 
 .weather-app {
-    max-width: 600px;
-    margin: 30px auto;
+    border: 1px solid #878787;
+    border-radius: 5px;
+    padding: 20px;
 }
 
-.temperature {
+.overview {
+    margin-bottom: 20px;
+}
+
+.weather-temperature img {
     margin-right: 5px;
     height: 100px;
     width: 100px;
 }
 
-.weather-temperature .active {
+.weather-temperature strong {
+    color: #383838;
+    cursor: default;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.weather-temperature .units {
+    position: relative;
+    font-size: 16px;
+    top: -22px;
+}
+
+.weather-temperature active {
     color: blue;
     cursor: default;
 }
@@ -57,13 +77,4 @@ footer {
     text-decoration: none;
 }
 
-.units {
-    position: relative;
-    font-size: 16px;
-    top: -22px;
-}
-
-.temperature {
-    font-size: 50px;
-}
 
