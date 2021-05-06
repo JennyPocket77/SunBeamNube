@@ -34,8 +34,8 @@ small {
 }
 
 .weather-app-wrapper {
-    margin: 30px auto;
     max-width: 600px;
+    margin: 30px auto;
 }
 
 .weather-app {
@@ -45,31 +45,34 @@ small {
 }
 
 .overview {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .weather-temperature img {
     margin-right: 5px;
-    height: 100px;
-    width: 100px;
+    height: 64px;
+    width: 64px;
 }
 
 .weather-temperature strong {
-    color: #383838;
+    color: #525050;
     cursor: default;
     font-size: 64px;
     font-weight: 400;
     line-height: 1;
+    margin-top: -65px;
+    margin-right: 10px;
 }
 
 .weather-temperature .units {
     position: relative;
     font-size: 16px;
-    top: -22px;
+    top: -60px;
+    text-decoration: none;
 }
 
 .weather-temperature active {
-    color: blue;
+    color: #1d6bac;
     cursor: default;
 }
 
