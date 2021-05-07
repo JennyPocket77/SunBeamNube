@@ -1,4 +1,5 @@
 body {
+
     font-family: "Zen Dots", cursive;
 }
 
@@ -31,7 +32,7 @@ li::first-letter {
 
 footer {
     text-align: center;
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 100;
     margin-top: 10px;
 }
