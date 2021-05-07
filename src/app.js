@@ -22,6 +22,122 @@ function formatDate(timestamp) {
     return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+    let forecastElement = document.querySelector("#forecast");
+    
+    let forecastHTML = `<div class="row">`;
+    forecastHTML = forecastHTML + `
+
+    <div class="col-2">
+      <div class="weather-forecast-date">
+        Thurs
+        </div>
+      <img 
+        src= "http://openweathermap.org/img/wn/01n@2x.png"
+        alt="cloudy" 
+        width="45"
+        />
+        <div class="weather-forecast-temperature">
+          <span class="weather-forecast-temperature-max">18° </span> |
+         <span class="weather-forecast-temperature-min">12°</span>
+        </div>
+        </div>
+    `;
+
+    forecastHTML = forecastHTML + `
+
+    <div class="col-2">
+      <div class="weather-forecast-date">
+        Thurs
+        </div>
+      <img 
+        src= "http://openweathermap.org/img/wn/01n@2x.png"
+        alt="cloudy" 
+        width="45"
+        />
+        <div class="weather-forecast-temperature">
+          <span class="weather-forecast-temperature-max">18° </span> |
+         <span class="weather-forecast-temperature-min">12°</span>
+        </div>
+        </div>
+    `;
+
+    forecastHTML = forecastHTML + `
+
+    <div class="col-2">
+      <div class="weather-forecast-date">
+        Thurs
+        </div>
+      <img 
+        src= "http://openweathermap.org/img/wn/01n@2x.png"
+        alt="cloudy" 
+        width="45"
+        />
+        <div class="weather-forecast-temperature">
+          <span class="weather-forecast-temperature-max">18° </span> |
+         <span class="weather-forecast-temperature-min">12°</span>
+        </div>
+        </div>
+    `;
+
+    forecastHTML = forecastHTML + `
+
+    <div class="col-2">
+      <div class="weather-forecast-date">
+        Thurs
+        </div>
+      <img 
+        src= "http://openweathermap.org/img/wn/01n@2x.png"
+        alt="cloudy" 
+        width="45"
+        />
+        <div class="weather-forecast-temperature">
+          <span class="weather-forecast-temperature-max">18° </span> |
+         <span class="weather-forecast-temperature-min">12°</span>
+        </div>
+        </div>
+    `;
+
+    forecastHTML = forecastHTML + `
+
+    <div class="col-2">
+      <div class="weather-forecast-date">
+        Thurs
+        </div>
+      <img 
+        src= "http://openweathermap.org/img/wn/01n@2x.png"
+        alt="cloudy" 
+        width="45"
+        />
+        <div class="weather-forecast-temperature">
+          <span class="weather-forecast-temperature-max">18° </span> |
+         <span class="weather-forecast-temperature-min">12°</span>
+        </div>
+        </div>
+    `;
+
+    forecastHTML = forecastHTML + `
+
+    <div class="col-2">
+      <div class="weather-forecast-date">
+        Thurs
+        </div>
+      <img 
+        src= "http://openweathermap.org/img/wn/01n@2x.png"
+        alt="cloudy" 
+        width="45"
+        />
+        <div class="weather-forecast-temperature">
+          <span class="weather-forecast-temperature-max">18° </span> |
+         <span class="weather-forecast-temperature-min">12°</span>
+        </div>
+        </div>
+    `;
+
+    forecastHTML = forecastHTML + `</div>`
+    forecastElement.innerHTML = forecastHTML;
+}
+
 function displayTemperature(response) {
     let temperatureElement = document.querySelector("#temperature");
     let cityElement = document.querySelector("#city");
@@ -78,6 +194,7 @@ function displayCelsiusTemperature(event) {
 
 let celsiusTemperature = null;
 
+
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
@@ -91,16 +208,17 @@ function searchLocation(position) {
     let apiKey = "5449566f91bf89e9a304207261a39d85";
     let units = "metric";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=${units}`;
-  axios.get(apiUrl).then(displayWeatherCondition);
+    axios.get(apiUrl).then(displayWeatherCondition);
 }
 
 function getCurrentLocation(event) {
-  event.preventDefault();
-  navigator.geolocation.getCurrentPosition(searchLocation);
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 search("New York");
+displayForecast();
 
