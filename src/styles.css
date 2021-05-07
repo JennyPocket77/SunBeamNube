@@ -1,5 +1,5 @@
 body {
-
+    background: chartreuse;
     font-family: "Zen Dots", cursive;
 }
 
@@ -49,9 +49,12 @@ footer {
 .current-location-button {
    background-color: #EC6E4C;
    color:#fff;
+   font-size: 14px;
+   line-height: 1.5;
    padding: 5px;
-   border: 2px;
+   border: 1px solid transparent;
    border-radius: 5px;
+   text-align: center;
 }
 
 .current-location-button:hover {
@@ -99,7 +102,7 @@ footer {
 .weather-temperature .units {
     color: #EC6E4C;
     position: relative;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 100;
     top: -60px;
     text-decoration: none;
@@ -130,7 +133,7 @@ footer {
 }
 
 .weather-forecast-temperature-min  {
-    font-size: 12px;
+    font-size: 11px;
     opacity: .7;
 
 }
