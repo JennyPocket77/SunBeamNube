@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(to top, #f7cfcc 0%, #f5efef 100%);;
+    background-image: linear-gradient(to top, #f7cfcc 0%, #faf9f9 100%);;
     font-family: "Zen Dots", cursive;
 }
 
@@ -35,10 +35,18 @@ footer {
     font-size: 10px;
     font-weight: 100;
     margin-top: 10px;
+    margin-bottom: 50px;
 }
 
 .btn {
     background-color: #EC6E4C;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 15px 15px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    box-shadow: 7px 5px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .btn:hover {
@@ -51,9 +59,10 @@ footer {
    color:#fff;
    font-size: 14px;
    line-height: 1.5;
-   padding: 5px;
+   padding: 5px 15px;
    border: 1px solid transparent;
    border-radius: 5px;
+   box-shadow: 7px 5px 12px rgba(0, 0, 0, 0.1);
    text-align: center;
 }
 
@@ -69,12 +78,13 @@ footer {
 
 .weather-app-wrapper {
     max-width: 600px;
-    margin: 30px auto;
+    margin: 50px auto;
 }
 
 .weather-app {
-    border: 1.5px solid #878787;
+    border: 1.5px solid #a3a1a1;
     border-radius: 10px;
+    box-shadow: 7px 5px 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
 }
 
@@ -84,8 +94,12 @@ footer {
 
 .weather-temperature img {
     margin-right: 25px;
-    height: 80px;
-    width: 80px;
+    height: 90px;
+    width: 90px;
+}
+
+.humidity, .wind {
+margin-top: -200px;
 }
 
 .weather-temperature strong {
@@ -102,9 +116,9 @@ footer {
 .weather-temperature .units {
     color: #EC6E4C;
     position: relative;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 100;
-    top: -60px;
+    margin-top: -64px;
     text-decoration: none;
 }
 
