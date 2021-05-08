@@ -1,6 +1,10 @@
 body {
-    background-image: linear-gradient(to top, #f7cfcc 0%, #faf9f9 100%);;
+    background-image: linear-gradient(to top, #fabfba 0%, #fdfdfd 100%);
     font-family: "Zen Dots", cursive;
+}
+
+html {
+    min-height: 100%;
 }
 
 h1 {
@@ -96,10 +100,6 @@ footer {
     margin-right: 25px;
     height: 90px;
     width: 90px;
-}
-
-.humidity, .wind {
-margin-top: -200px;
 }
 
 .weather-temperature strong {
