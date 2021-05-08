@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(to top, #fabfba 0%, #fdfdfd 100%);
+    background-image: linear-gradient(to top, #fcaca5 0%, #fffbfb 100%);
     font-family: "Zen Dots", cursive;
 }
 
@@ -86,6 +86,7 @@ footer {
 }
 
 .weather-app {
+    background: rgb(255, 237, 237);
     border: 1.5px solid #a3a1a1;
     border-radius: 10px;
     box-shadow: 7px 5px 12px rgba(0, 0, 0, 0.1);
