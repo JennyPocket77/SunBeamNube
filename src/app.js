@@ -139,7 +139,7 @@ function searchLocation(position) {
     let apiKey = "5449566f91bf89e9a304207261a39d85";
     let units = "imperial";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=${units}`;
-    axios.get(apiUrl).then(displayWeatherCondition);
+    axios.get(apiUrl).then(displayTemperature);
 }
 
 function getCurrentLocation(event) {
