@@ -40,13 +40,13 @@ function displayForecast(response) {
         <div class="col-2">
         <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div>
         <img
-        src= "http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
+        src= "https://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
         alt="cloudy" 
         width="45"
         />
         <div class="weather-forecast-temperature">
         <span class="weather-forecast-temperature-max"> ${Math.round(forecastDay.temp.max)}° </span> |
-        <span class="weather-forecast-temperature-min"> ${Math.round(forecastDay.temp.min)}°</span>
+        <span class="weather-forecast-temperature-min"> ${Math.round(forecastDay.temp.min)}° </span>
         </div>
         </div>
         `;
@@ -84,7 +84,7 @@ function displayTemperature(response) {
     dateElement.innerHTML = formatDate(response.data.dt * 1000);
     iconElement.setAttribute(
         "src",
-        `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+        `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
         );
         iconElement.setAttribute("alt", response.data.weather[0].description);
 
